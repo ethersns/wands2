@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400" role="img" aria-label="Placeholder artwork">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4A2C5E" />
+      <stop offset="100%" stop-color="#1E1B3A" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#sky)" />
+  <circle cx="200" cy="176" r="58" fill="none" stroke="#C9A24B" stroke-width="2" opacity="0.85" />
+  <circle cx="200" cy="176" r="34" fill="#C9A24B" opacity="0.18" />
+  <g stroke="#B9A9D6" stroke-width="1.5" opacity="0.6">
+    <path d="M200 60v22M200 270v22M84 176h22M294 176h22" />
+    <path d="M118 94l16 16M266 242l16 16M282 94l-16 16M134 242l-16 16" />
+  </g>
+  <text x="200" y="330" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#F7F2E8" opacity="0.75">wands.trade</text>
+</svg>

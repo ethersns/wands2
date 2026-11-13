@@ -1,7 +1,19 @@
 "use client"
 
 import Link from "next/link"
-import { MoonStar, Sparkles, Star } from "lucide-react"
+import {
+  BookOpen,
+  Flame,
+  Gem,
+  Leaf,
+  MoonStar,
+  Orbit,
+  Palette,
+  Shirt,
+  Sparkles,
+  Star,
+  WandSparkles,
+} from "lucide-react"
 import { FormEvent, useMemo, useState } from "react"
 
 import { ListingCard } from "@/components/listing-card"
@@ -10,16 +22,16 @@ import { categories, listings, sellers } from "@/lib/data"
 const iconClassName = "h-5 w-5 text-[var(--color-gold)]"
 
 const categoryIcons: Record<string, React.ComponentType<{ className?: string }>> = {
-  WandSparkles: Sparkles,
-  Gem: Star,
+  WandSparkles,
+  Gem,
   Sparkles,
-  Flame: Sparkles,
-  Leaf: Star,
+  Flame,
+  Leaf,
   MoonStar,
-  Orbit: Star,
-  BookOpen: Sparkles,
-  Palette: Star,
-  Shirt: Sparkles,
+  Orbit,
+  BookOpen,
+  Palette,
+  Shirt,
 }
 
 export default function HomePage() {
