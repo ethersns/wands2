@@ -17,9 +17,35 @@ const inter = Inter({
   variable: "--font-inter",
 })
 
+const siteUrl = "https://wands.trade"
+const siteDescription =
+  "A twilight marketplace for handmade, vintage and pre-loved magical goods — wands, crystals, tarot decks, candles and ritual tools from verified makers and collectors."
+
 export const metadata: Metadata = {
-  title: "wands.trade — a twilight marketplace for magical goods",
-  description: "A twilight marketplace for handmade, vintage and pre-loved magical goods.",
+  metadataBase: new URL(siteUrl),
+  title: "wands.trade | Where magic changes hands",
+  description: siteDescription,
+  openGraph: {
+    type: "website",
+    url: siteUrl,
+    siteName: "wands.trade",
+    title: "wands.trade | Where magic changes hands",
+    description: siteDescription,
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "A wand catching gold light against a twilight sky — wands.trade",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "wands.trade | Where magic changes hands",
+    description: siteDescription,
+    images: ["/og.png"],
+  },
 }
 
 export const viewport: Viewport = {
